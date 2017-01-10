@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.maosx.api.UserService;
 import com.maosx.entity.User;
 import com.maosx.server.dao.UserDao;
-@Service("userServiceImpl")
+@Service("userService")
 public class UserServiceImpl implements UserService{
 	@Autowired
 	private UserDao userDao;

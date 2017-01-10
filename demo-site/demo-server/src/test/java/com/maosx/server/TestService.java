@@ -16,7 +16,7 @@ import com.maosx.entity.User;
 @ContextConfiguration(locations = { "classpath:applicationContext.xml" })
 public class TestService {
 	@Autowired
-	@Qualifier("userServiceImpl")
+	@Qualifier("userService")
 	private UserService userService;
 	
 	@Test
@@ -27,7 +27,6 @@ public class TestService {
 	
 	@Test
 	public void testSaveUser(){
-		System.out.println(userService);
 		for(int i = 0;i<5;i++){
 			User user = new User();
 			user.setName("test_"+i);
