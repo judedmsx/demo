@@ -7,3 +7,27 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
+
+*.tar
+*.tar.gzi*.jar
+*.war
+*.zip
+*.tar
+*.tar.gz*.jar
+*.war
+*.zip
+*.tar
+*.tar.gz
+
+
+# eclipse ignore
+.settings/
+.project
+.classpath
+
+# temp ignore
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
