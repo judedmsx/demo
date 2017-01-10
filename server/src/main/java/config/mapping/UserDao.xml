@@ -4,4 +4,16 @@
 	<select id="getUsers" resultType="User">
 		select * from user
 	</select>
+	
+	<insert id="save" parameterType="User" useGeneratedKeys="true" keyProperty="id">
+		insert into user(name,sex) values(#{name},#{sex})
+	</insert>
+	
+	<update id="update" parameterType="User">
+		update user set name=#{name},sex=#{sex} where id=#{id}
+	</update>
+	
+	<delete id="delete" parameterType="User">
+		delete from user where id=#{id}
+	</delete>
 </mapper>

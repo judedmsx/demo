@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.maosx.api.UserService;
 import com.maosx.entity.User;
 import com.maosx.server.dao.UserDao;
-@Service
+@Service("userServiceImpl")
 public class UserServiceImpl implements UserService{
 	@Autowired
 	private UserDao userDao;
@@ -18,7 +18,7 @@ public class UserServiceImpl implements UserService{
 		
 	}
 
-	public void delete(long id) {
+	public void delete(User user) {
 		// TODO Auto-generated method stub
 		
 	}
